@@ -29,6 +29,6 @@ This table is loaded by a javascript so that only 20 results appear to start, an
 
 Inspecting the page with Google Developer Tools > Network > search for 'ajax' we find the an ajax call requesting results to be loaded: [https://www.worldmarathonmajors.com/ajax/hall_of_fame/?action=load_more&pageStart=1&pageEnd=1&filters=%7B%22searchQuery%22%3A%22%22%2C%22nationality%22%3A%22all%22%2C%22stars%22%3A%22all%22%7D](https://www.worldmarathonmajors.com/ajax/hall_of_fame/?action=load_more&pageStart=1&pageEnd=1&filters=%7B%22searchQuery%22%3A%22%22%2C%22nationality%22%3A%22all%22%2C%22stars%22%3A%22all%22%7D)
 
-By editing the section `pageStart=1&pageEnd=1` we can manipulate what data is returned, and thus what data can be received from the page, e.g. changing `pageStart=1&pageEnd=1` to `pageStart=1&pageEnd=10` means we'll recieve the first 200 results instead of just 20.
+By editing the section `pageStart=1&pageEnd=1` we can manipulate what data is returned, and thus what data can be received from the page, e.g. changing `pageStart=1&pageEnd=1` to `pageStart=1&pageEnd=10` means we'll receive the first 200 results instead of just 20.
 
 
