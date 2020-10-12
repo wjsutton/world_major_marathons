@@ -83,5 +83,6 @@ for(i in seq_along(d1)){
     marathon_results <- rbind(marathon_results,df)
   }
 }
+
 marathon_results <- unique(marathon_results)
 write.csv(marathon_results,"data/marathon_results.csv", row.names = F)
