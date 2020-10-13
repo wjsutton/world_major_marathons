@@ -1,5 +1,6 @@
 
-d1 <- readRDS("data/raw_data_output.RDS")
+#d1 <- readRDS("data/raw_data_output.RDS")
+d1 <- readRDS("data/raw_six_star_data_output.RDS")
 
 for(i in seq_along(d1)){
   print(i)
@@ -85,4 +86,5 @@ for(i in seq_along(d1)){
 }
 
 marathon_results <- unique(marathon_results)
-write.csv(marathon_results,"data/marathon_results.csv", row.names = F)
+#write.csv(marathon_results,"data/marathon_results.csv", row.names = F)
+write.csv(marathon_results,"data/six_star_marathon_results.csv", row.names = F)
