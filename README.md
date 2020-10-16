@@ -5,7 +5,7 @@
 
 [![Status](https://www.repostatus.org/badges/latest/wip.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/wjsutton/world_major_marathons.svg)](https://github.com/wjsutton/world_major_marathons/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/wjsutton/world_major_marathons.svg)](https://github.com/wjsutton/world_major_marathons/pulls) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-Aggregrating results from the World Major Marathons [https://www.worldmarathonmajors.com/](https://www.worldmarathonmajors.com/)
+Aggregating results from the World Major Marathons [https://www.worldmarathonmajors.com/](https://www.worldmarathonmajors.com/) for a dataviz project.
 
 :construction: Repo Under Construction :construction: 
 
