@@ -2,7 +2,8 @@
 library(jsonlite)
 
 #calls <- read.csv('data/wmm_call_list.csv',stringsAsFactors = F)
-calls <- read.csv('data/wmm_six_star_call_list.csv',stringsAsFactors = F)
+calls <- read.csv('data/wmm_five_star_call_list.csv',stringsAsFactors = F)
+#calls <- read.csv('data/wmm_six_star_call_list.csv',stringsAsFactors = F)
 
 
 for(a in seq_along(calls$x)){
@@ -21,4 +22,5 @@ for(a in seq_along(calls$x)){
 }
 
 #saveRDS(output,"data/raw_data_output.RDS")
-saveRDS(output,"data/raw_six_star_data_output.RDS")
+saveRDS(output,"data/raw_five_star_data_output.RDS")
+#saveRDS(output,"data/raw_six_star_data_output.RDS")
