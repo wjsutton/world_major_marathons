@@ -50,8 +50,10 @@ pivot <- rbind(tokyo,chicago,berlin,newyorkcity,boston,london)
 pivot$marathon_time <- substr(pivot$marathon_time,1,7)
 
 pivot$marathon_time_in_seconds <- as.integer(substr(pivot$marathon_time,1,1))*60*60 + as.integer(substr(pivot$marathon_time,3,4))*60 + as.integer(substr(pivot$marathon_time,6,7))
-runners_under_2_hours <- unique((pivot %>% filter(marathon_time_in_seconds <= 7200))$runner_id)
-pivot_marathon_only <-  subset(pivot, !(runner_id %in% runners_under_2_hours))
 
-write.csv(pivot_marathon_only,"data/wmm_marathon_results_pivot.csv", row.names = F)
+# Assuming that if an athlete has run under 2 hours they are a wheelchair athlete
+runners_under_2_hours <- unique((pivot %>% filter(marathon_time_in_seconds <= 7200))$runner_id)
+pivot$athlete_type <- ifelse(pivot$runner_id %in% runners_under_2_hours,'Wheelchair','Runner')
+
+write.csv(pivot,"data/wmm_marathon_results_pivot.csv", row.names = F)
 
